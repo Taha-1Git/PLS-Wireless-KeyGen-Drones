@@ -1,0 +1,97 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.009773410247262299 0.005840768518353061 0.999935180836865 2.0646062602305166
+  position 5.502413806958156 -8.381900807119932 0.33045250593232667
+}
+Mavic2Pro {
+  hidden position_0_0 -1.5927017560418934e-08
+  hidden position_5_0 6.245353782537295e-08
+  hidden rotation_6 0 1 0 5.960464477539063e-08
+  hidden position_6_0 2.3954998738536763e-08
+  hidden rotation_7 1 0 0 2.9802322387695313e-08
+  translation 1.9953473261763428 1.9999984784577571 0.06557267224928603
+  rotation 4.457029880989215e-05 -0.9999998482550875 -0.0005490931526589844 0.07011180516075483
+  name "MAVIC_B"
+  controller "mavic_emitter"
+  cameraSlot [
+    Emitter {
+      channel 1
+    }
+    Camera {
+      width 400
+      height 240
+    }
+  ]
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.285791 0.164999 0
+  rotation 0 0 -1 1.0472
+}
+Crazyflie {
+  translation -0.712912684482228 0.10807393745586462 0.014980380002931023
+  rotation 5.479810873167672e-12 -9.70191956033821e-12 1 -3.0121108349470154
+  controller "triangulation_controller"
+  extensionSlot [
+    Receiver {
+      channel 1
+    }
+  ]
+}
+Mavic2Pro {
+  hidden position_0_0 -2.5988650789354526e-08
+  hidden rotation_5 0 0 -1 2.9802322387695313e-08
+  hidden position_5_0 6.25812487475283e-08
+  hidden rotation_6 0 1 0 5.960464477539063e-08
+  hidden position_6_0 4.689348259295686e-09
+  translation 1.10937 -0.0633853 0.3458
+  rotation 0.1430857884761529 0.6147812846020982 -0.7756097145079807 0.3562025773888375
+  name "MAVIC_A"
+  controller "mavic_emitter"
+  cameraSlot [
+    Emitter {
+      channel 1
+    }
+    Camera {
+      width 400
+      height 240
+    }
+  ]
+}
+Pose {
+}
+Mavic2Pro {
+  hidden position_0_0 -1.5927016912517094e-08
+  hidden position_5_0 6.245354117091468e-08
+  hidden rotation_6 0 1 0 5.960464477539063e-08
+  hidden position_6_0 2.3954998273655048e-08
+  hidden rotation_7 1 0 0 2.9802322387695313e-08
+  translation -2.0046526738236556 1.99999847845776 0.06557267224928613
+  rotation 4.457029880925372e-05 -0.9999998482550877 -0.0005490931526374587 0.07011180516075495
+  name "MAVIC_C"
+  controller "mavic_emitter"
+  controllerArgs [
+    ""
+  ]
+  cameraSlot [
+    Emitter {
+      channel 1
+    }
+    Camera {
+      width 400
+      height 240
+    }
+  ]
+}
